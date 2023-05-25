@@ -1,0 +1,132 @@
+/*PRINCIPAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;   
+    align-items: center;   
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    color: hsl(224, 23%, 55%);
+    line-height: 2.5rem;
+    background: url(./images/pattern-background-mobile.svg) no-repeat top/contain,
+                hsla(225, 100%, 94%, 1);
+}
+
+main{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 2rem;
+    width: 35.5rem;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+/*SECTION*/
+
+section{
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    font-size: 2.2rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin: 2.0rem 0 2.0rem;
+}
+
+p.text{
+    margin-right: 1.0rem;
+    margin-left: 1.0rem;
+}
+
+div.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.info::before{
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: url(./images/icon-music.svg) center;
+    margin-left: -2.2rem;
+}
+
+div.info p{
+    margin-left: -2.0rem;
+}
+
+div.info p span:first-child{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+div.info a{
+   color: hsl(245, 75%, 52%);
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+div.info a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.7);
+}
+
+/*BUTTON*/
+
+.confirm button{
+    color: hsl(225, 100%, 98%);
+    background-color: hsl(245, 75%, 52%);
+    line-height: 4.6rem;
+    border-radius: 1.0rem;
+    border-style: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 2.0rem;
+}
+
+.confirm button:hover{
+    cursor: pointer;
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.confirm a{
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    display: inline-block;
+    margin: 2.0rem 0 3.5rem 0;
+}
+
+.confirm a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (min-width: 700px){
+
+    body{
+        background: url(./images/pattern-background-desktop.svg) no-repeat top/contain,
+                    hsla(225, 100%, 94%, 1);
+    }
+
+}
